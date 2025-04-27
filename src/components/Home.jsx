@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-
+import { Link } from 'react-router-dom';
 export default function Home() {
   const titleRef = useRef(null);
 
@@ -45,12 +45,12 @@ export default function Home() {
             <p className="text-lg md:text-2xl mb-6">
               Premium quality rice sourced from trusted mills, ensuring the best for your family.
             </p>
-            <a 
-              href="about" 
-              className="bg-yellow-600 text-gray-900 py-3 px-8 text-xl rounded-full hover:bg-yellow-700 transition duration-300"
-            >
-              Learn More
-            </a>
+            <Link
+  to="/about"
+  className="bg-gray-900 py-3 px-8 text-xl rounded-full hover:bg-gray-800 transition duration-300"
+>
+  Learn More
+</Link>
           </div>
         </div>
 
@@ -179,12 +179,12 @@ export default function Home() {
       <section id="cta" className="bg-yellow-600 py-20 text-center text-white">
         <h2 className="text-3xl font-bold mb-4">Ready to Buy?</h2>
         <p className="text-lg mb-6">Order your premium quality rice today and enjoy the best for your family!</p>
-        <a 
-  href="/products" 
+        <Link
+  to="/products"
   className="bg-gray-900 py-3 px-8 text-xl rounded-full hover:bg-gray-800 transition duration-300"
 >
-  Order Now
-</a>
+  Learn More
+</Link>
 
       </section>
 
